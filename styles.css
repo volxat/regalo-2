@@ -1,0 +1,27 @@
+body {
+    background-color: black;
+    overflow: hidden;
+    margin: 0;
+}
+
+.text {
+    color: #800080; /* Color morado */
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    font-size: 20px;
+    white-space: nowrap;
+    opacity: 0;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        top: -50px;
+        opacity: 1;
+    }
+    100% {
+        top: 110vh;
+        opacity: 0;
+    }
+}
